@@ -1,10 +1,4 @@
-import {
-  Nabvar,
-  Nav,
-  Container,
-  Navbar,
-  NavbarCollapse,
-} from "react-bootstrap";
+import { Nav, Container, Navbar, NavbarCollapse } from "react-bootstrap";
 import { FaShoppingCart, FaUser } from "react-icons/fa";
 import logo from "../assets/logo.png";
 

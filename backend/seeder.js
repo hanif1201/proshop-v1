@@ -10,13 +10,15 @@ import connectDB from "./config/db.js";
 
 dotenv.config();
 
-connectDB();
+await connectDB();
 
 const importData = async () => {
   try {
     await Order.deleteMany();
     await Product.deleteMany();
     await User.deleteMany();
+
+    console.log("Data Imported!".green.inverse);
 
     const createdUsers = await User.insertMany(users);
 
